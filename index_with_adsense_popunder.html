@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8255818960430212"
+     crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>نتيجتك في البكالوريا 😱</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+    input {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .comment {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #555;
+    }
+    .share, .try-again {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>نتائج شهادة البكالوريا 2025 🎓</h2>
+    <input type="text" id="reg" placeholder="رقم التسجيل">
+    <input type="date" id="dob" placeholder="تاريخ الميلاد">
+    <button onclick="generateResult()">عرض النتيجة</button>
+
+    <div class="result" id="score"></div>
+    <div class="comment" id="comment"></div>
+
+    <!-- إعلان Adsterra -->
+    
+<!-- إعلان Adsterra (320x50) -->
+<div id="adBox" style="margin-top: 20px; display: none;">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '8a50628aa5106e481762943c3976cfdd',
+      'format' : 'iframe',
+      'height' : 50,
+      'width' : 320,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/8a50628aa5106e481762943c3976cfdd/invoke.js"></script>
+</div>
+
+
+    <!-- زر مشاركة -->
+    <div class="share" id="shareBox" style="display: none;">
+      <button onclick="share()">📢 شارك نتيجتك على فيسبوك</button>
+    </div>
+
+    <!-- زر إعادة المحاولة -->
+    <div class="try-again" id="tryBox" style="display: none;">
+      <button onclick="location.reload()">🔁 جرب من جديد</button>
+    </div>
+  </div>
+
+  <script>
+    function generateResult() {
+      const scores = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+      const comments = {
+        10: "روح اسرح بالنمل 🐜",
+        11: "ربي قطوطة 🐱 وارتاح",
+        12: "بشوية تقرا يا بطل 💪",
+        13: "ماشي بطال، زيد شوية",
+        14: "راهي جاية.. شد روحك!",
+        15: "نتا حمار في راسك 😂",
+        16: "برافو.. عقلية",
+        17: "غول في المواد العلمية",
+        18: "ما شاء الله.. حوت 🐠",
+        19: "عمك آينشتاين 🤯"
+      };
+
+      const randomIndex = Math.floor(Math.random() * scores.length);
+      const result = scores[randomIndex];
+
+      document.getElementById("score").textContent = `معدلك هو: ${result}/20`;
+      document.getElementById("comment").textContent = comments[result];
+      document.getElementById("adBox").style.display = "block";
+      document.getElementById("shareBox").style.display = "block";
+      document.getElementById("tryBox").style.display = "block";
+    }
+
+    function share() {
+      const score = document.getElementById("score").textContent;
+      const comment = document.getElementById("comment").textContent;
+      const url = encodeURIComponent(window.location.href);
+      const text = encodeURIComponent(`شوف نتيجتي في الباك: ${score} - ${comment} 😂`);
+
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
